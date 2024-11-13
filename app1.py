@@ -9,10 +9,10 @@ import pickle
 import random
 
 
-df_customer = pd.read_csv("C:\\Users\\cjswo\\Desktop\\Untitled Folder\\df_final3.csv")
-df_charge = pd.read_csv("C:\\Users\\cjswo\\Desktop\\Untitled Folder\\DS_Charge_data.csv", encoding='cp949')
+df_customer = pd.read_csv("df_final3.csv")
+df_charge = pd.read_csv("DS_Charge_data.csv", encoding='cp949')
 
-image_path = "C:\\Users\\cjswo\\Desktop\\Untitled Folder\\image11.png"
+image_path = "image11.png"
 
 
 df_customer['이용서비스수'] = (
