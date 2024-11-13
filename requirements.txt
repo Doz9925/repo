@@ -4,3 +4,4 @@ plotly
 scikit-learn==1.4.2
 numpy
 jolib
+imblearn
