@@ -2,4 +2,4 @@ pandas
 streamlit
 plotly
 scikit-learn==1.4.2
-numpy==1.23.5
+numpy
