@@ -1,6 +1,6 @@
 pandas
 streamlit
 plotly
-scikit-learn
+scikit-learn <= 24.3.1
 pickle
 random
