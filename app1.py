@@ -14,6 +14,19 @@ df_charge = pd.read_csv("DS_Charge_data.csv", encoding='cp949')
 
 image_path = "image11.png"
 
+# CSS로 배경색 변경
+st.markdown(
+    """
+    <style>
+    /* 전체 페이지 배경색 변경 */
+    .main {
+        background-color: #000000;  /* 원하는 배경색으로 변경하세요 */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 df_customer['이용서비스수'] = (
     df_customer[['보안서비스', '백업서비스', '기술지원서비스']]
