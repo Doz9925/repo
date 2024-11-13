@@ -50,7 +50,7 @@ df2_pca_3d_df['고객ID'] = df_customer['고객ID']
 df2_pca_3d_df['Cluster'] = df_customer['Cluster'].astype(str)
 
 
-with open('C:\\Users\\cjswo\\Desktop\\Untitled Folder\\best_model11.sav', 'rb') as model_file:
+with open('best_model11.sav', 'rb') as model_file:
     best_model = pickle.load(model_file)
 
 # Streamlit
