@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-import pickle
+from joblib import load
 import random
 
 
@@ -50,8 +50,7 @@ df2_pca_3d_df['고객ID'] = df_customer['고객ID']
 df2_pca_3d_df['Cluster'] = df_customer['Cluster'].astype(str)
 
 
-with open('best_model11.sav', 'rb') as model_file:
-    best_model = pickle.load(model_file)
+best_model = load('best_model11(2).joblib')
 
 # Streamlit
 st.set_page_config(page_title="고객 이탈 예측 대시보드", layout="wide")
